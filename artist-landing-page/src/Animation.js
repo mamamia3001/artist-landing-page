@@ -12,14 +12,15 @@ const Animation = () => {
   return (
     <animated.div
       style={props}
-      className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-50"
+      className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center overflow-hidden"
     >
       <img
         src={flying}
         alt="highcattle"
-        className="object-cover max-w-20 max-h-20"
+        className="max-w-full max-h-full"
+        style={{ width: "100%", height: "10%", objectFit: "cover" }}
       />
-      <h1 className="text-4xl text-white">HIGHCATTLE WORKS OUT.</h1>
+      <h1 className="text-4xl text-white"></h1>
     </animated.div>
   );
 };
